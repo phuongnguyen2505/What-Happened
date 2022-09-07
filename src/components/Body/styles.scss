@@ -1,0 +1,362 @@
+.main-banner {
+  img {
+    width: 100%;
+  }
+}
+.container.intro {
+  background: url("../asset/picture/introduction-bg.png");
+  background-size: 100% 100%;
+  height: 100%;
+  top: -5px;
+  .content-intro {
+    margin-left: 140px;
+    padding: 140px 0 140px 0;
+    width: 667px;
+    h1 {
+      text-transform: uppercase;
+      font-size: 50px;
+      font-weight: 800;
+      color: var(--white);
+    }
+    p {
+      font-size: 20px;
+      margin-top: 59px;
+      line-height: 30px;
+      text-align: left;
+      color: var(--white);
+    }
+  }
+}
+.best-pr {
+  width: 665px;
+  padding-top: 150px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 74px;
+  color: var(--bright-orange);
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 49px;
+    font-size: 20;
+  }
+}
+
+.btn-seemore {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  button {
+    width: 100%;
+    height: 100%;
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 3px solid #000;
+    background: transparent;
+    &:hover {
+      background: var(--black);
+      color: var(--white);
+    }
+  }
+}
+
+.container.best {
+  background: url("../asset/picture/bes-bg.png");
+  background-size: 100% 100%;
+  height: 100%;
+  top: -5px;
+  .row {
+    position: relative;
+    padding-bottom: 135px;
+    .best-pr-item {
+      .icon {
+        position: absolute;
+        top: -40px;
+        width: 80px;
+        height: 80px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        p {
+          position: absolute;
+          top: 20px;
+          left: 22px;
+          font-size: 30px;
+          font-weight: 800;
+          text-decoration: underline;
+        }
+      }
+      .img {
+        width: 523px;
+        height: 514px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .card-info {
+        position: relative;
+        top: -40px;
+        width: 369px;
+        height: 79px;
+        border: 3px solid var(--dark-maroon);
+        background: var(--white);
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        p {
+          font-size: 20px;
+          font-weight: 800;
+          margin-left: 20px;
+        }
+        button {
+          width: 65px;
+          height: 57px;
+          font-size: 20px;
+          font-weight: 800;
+          background: #000;
+          border-radius: 50%;
+          margin-right: 10px;
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+.container.product {
+  margin: 0 auto;
+  .row {
+    position: relative;
+    top: 140px;
+    margin-bottom: 70px;
+    .product-card {
+      margin-right: 13px;
+      .img {
+        margin-bottom: 25px;
+      }
+      .title {
+        margin-bottom: 25px;
+        p {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+      .group-btn-like {
+        display: flex;
+        justify-content: space-between;
+        span {
+          display: flex;
+          align-items: center;
+          i {
+            color: var(--pumpkin-orange);
+          }
+        }
+      }
+    }
+  }
+  .btn-seemore {
+    margin: 250px auto 140px auto;
+  }
+}
+
+.container.story {
+  height: 956px;
+  background: var(--cerulean);
+  .best-pr {
+    color: var(--sun-yellow);
+    h1 {
+      font-size: 45px;
+      letter-spacing: 4.5px;
+    }
+    p {
+      font-weight: 300;
+    }
+  }
+  .row {
+    .outner {
+      width: 1251px;
+      height: 418px;
+      margin: auto;
+      display: grid;
+      z-index: 100;
+      span {
+        width: 100%;
+        height: 9px;
+        border: 5px solid var(--black-two);
+      }
+      .main-story {
+        background: #fff;
+        border: 3px solid var(--black-two);
+        display: flex;
+        .group-content {
+          width: 528px;
+          margin-top: 63px;
+          margin-left: 44px;
+          h1 {
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+          }
+          p {
+            font-weight: 300;
+            margin-top: 40px;
+            margin-bottom: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.object-gr {
+  position: absolute;
+  .oj1 {
+    position: absolute;
+    top: -150px;
+    left: 30px;
+  }
+  .oj2 {
+    position: absolute;
+    top: 90px;
+    left: -30px;
+  }
+  .oj3 {
+    position: absolute;
+    top: 170px;
+    left: 160px;
+  }
+  .oj4 {
+    position: absolute;
+    top: -150px;
+    left: 1450px;
+  }
+  .oj5 {
+    position: absolute;
+    top: 200px;
+    left: 1280px;
+  }
+  .oj6 {
+    position: absolute;
+    top: 170px;
+    left: 1480px;
+  }
+  .oj7 {
+    position: absolute;
+    top: 50px;
+    left: 1500px;
+  }
+
+  .oj8 {
+    position: absolute;
+    top: -510px;
+    left: 350px;
+  }
+
+  .oj9 {
+    position: absolute;
+    top: -80px;
+    left: 180px;
+  }
+  .oj10 {
+    position: absolute;
+    top: -50px;
+    left: 1250px;
+  }
+  .oj11 {
+    position: absolute;
+    top: -280px;
+    left: 1250px;
+  }
+  .oj12 {
+    position: absolute;
+    top: -250px;
+    left: 1350px;
+  }
+}
+
+.container.issue {
+  width: 100%;
+  height: 1143px;
+  padding: 0;
+  background: var(--goldenrod);
+  .best-pr {
+    color: var(--dark-brown);
+    h1 {
+      font-size: 45px;
+      letter-spacing: 4.5px;
+    }
+    p {
+      margin-bottom: 55px;
+    }
+    .btn-seemore {
+      margin: auto;
+    }
+  }
+  .group-news {
+    .row {
+      margin: 0;
+      .card {
+        width: 20%;
+        height: 480px;
+        border: 3px solid var(--black-two);
+        text-align: center;
+      }
+      .wh-issue {
+        background: var(--bright-orange-two);
+        .title {
+          margin: 50px;
+          font-size: 35px;
+          font-weight: 800;
+          h1 {
+            text-transform: uppercase;
+          }
+        }
+      }
+      .item-news {
+        background: var(--dark-brown);
+        .title {
+          text-transform: uppercase;
+          color: var(--white);
+          padding: 24px;
+        }
+        .d-brand {
+          background: var(--bright-orange-two);
+          color: var(--white);
+        }
+        img {
+          width: 100%;
+          height: 83%;
+        }
+      }
+    }
+  }
+}
+
+.container.video {
+  background: var(--white);
+  height: 1686px;
+  .best-pr {
+    color: var(--black-two);
+    h1 {
+      font-size: 50px;
+      letter-spacing: 10px;
+    }
+    p {
+      margin-bottom: 53px;
+    }
+    .btn-seemore {
+      margin: auto;
+    }
+  }
+  .main-banner-vd {
+    text-align: center;
+  }
+}

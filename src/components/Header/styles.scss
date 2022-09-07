@@ -1,0 +1,38 @@
+header {
+  height: 80px;
+  background-color: var(--black-two);
+  position: sticky;
+  padding-top: 27px;
+  font-size: 14px;
+  top: 0;
+
+  .row {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: auto 30px;
+    img {
+      width: 226px;
+      height: 26px;
+    }
+  }
+
+  nav {
+    margin-top: 5px;
+    a {
+      color: var(--white);
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-right: 72px;
+    }
+    .login {
+      &:before {
+        content: "";
+        height: 100%;
+        margin-right: 44px;
+        border-left: 1px solid var(--white);
+      }
+    }
+  }
+}
