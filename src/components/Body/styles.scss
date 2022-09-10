@@ -70,13 +70,18 @@
   background-size: 100% 100%;
   height: 100%;
   top: -5px;
+  .best-pr {
+    margin-bottom: 55px;
+  }
   .row {
     position: relative;
-    padding-bottom: 135px;
+    padding-bottom: 100px;
+    justify-content: center;
+    top: -80px;
     .best-pr-item {
       .icon {
-        position: absolute;
-        top: -40px;
+        position: relative;
+        top: 40px;
         width: 80px;
         height: 80px;
         img {
@@ -93,16 +98,15 @@
         }
       }
       .img {
-        width: 523px;
+        width: 471px;
         height: 514px;
         img {
           width: 100%;
-          height: 100%;
         }
       }
       .card-info {
         position: relative;
-        top: -40px;
+        top: -10px;
         width: 369px;
         height: 79px;
         border: 3px solid var(--dark-maroon);
@@ -138,7 +142,7 @@
     top: 140px;
     margin-bottom: 70px;
     .product-card {
-      margin-right: 13px;
+      margin: auto;
       .img {
         margin-bottom: 25px;
       }
@@ -152,6 +156,9 @@
       .group-btn-like {
         display: flex;
         justify-content: space-between;
+        p {
+          line-height: 30px;
+        }
         span {
           display: flex;
           align-items: center;
@@ -185,17 +192,32 @@
       width: 1251px;
       height: 418px;
       margin: auto;
-      display: grid;
       z-index: 100;
-      span {
+      .line-story {
         width: 100%;
-        height: 9px;
-        border: 5px solid var(--black-two);
+        height: 25px;
+        background: var(--black-two);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          position: relative;
+          width: 99%;
+          background: var(--cerulean);
+          border: 1px solid var(--cerulean);
+          &:last-child {
+            margin-top: 5px;
+          }
+        }
       }
       .main-story {
         background: #fff;
         border: 3px solid var(--black-two);
         display: flex;
+        img {
+          width: 50%;
+        }
         .group-content {
           width: 528px;
           margin-top: 63px;
@@ -216,32 +238,53 @@
   }
 }
 
+.line {
+  position: absolute;
+  width: 1920px;
+  height: 3px;
+  top: 400px;
+  background-color: var(--black-two);
+}
+
 .object-gr {
   position: absolute;
   .oj1 {
     position: absolute;
     top: -150px;
-    left: 30px;
+    left: 50px;
   }
   .oj2 {
     position: absolute;
-    top: 90px;
+    width: 192px;
+    top: 130px;
     left: -30px;
+    img {
+      width: 85%;
+    }
   }
   .oj3 {
     position: absolute;
-    top: 170px;
-    left: 160px;
+    width: 180px;
+    top: 200px;
+    left: 133px;
+    img {
+      width: 85%;
+    }
   }
   .oj4 {
     position: absolute;
-    top: -150px;
-    left: 1450px;
+    width: 197px;
+    top: -10px;
+    left: 1490px;
   }
   .oj5 {
     position: absolute;
-    top: 200px;
-    left: 1280px;
+    width: 350px;
+    top: 230px;
+    left: 1350px;
+    img {
+      width: 90%;
+    }
   }
   .oj6 {
     position: absolute;
@@ -279,6 +322,66 @@
     position: absolute;
     top: -250px;
     left: 1350px;
+  }
+  .oj13 {
+    position: absolute;
+    top: 0;
+    left: 150px;
+  }
+  .oj14 {
+    position: absolute;
+    width: 624px;
+    top: 330px;
+    left: -270px;
+    img {
+      width: 70%;
+    }
+  }
+  .oj15 {
+    position: absolute;
+    top: -300px;
+    left: 1400px;
+  }
+  .oj16 {
+    position: absolute;
+    top: -180px;
+    left: 1330px;
+  }
+  .oj17 {
+    position: absolute;
+    width: 350px;
+    top: 180px;
+    left: 1505px;
+    z-index: -1;
+    img {
+      width: 90%;
+    }
+  }
+  .oj18 {
+    position: absolute;
+    width: 596px;
+    top: 430px;
+    left: 1300px;
+    z-index: -1;
+    img {
+      width: 90%;
+    }
+  }
+  .oj19 {
+    position: absolute;
+    top: 680px;
+    left: 140px;
+    z-index: -1;
+  }
+  .oj20 {
+    position: absolute;
+    top: 790px;
+    left: 250px;
+  }
+  .oj21 {
+    position: absolute;
+    top: 790px;
+    left: 1020px;
   }
 }
 
@@ -341,7 +444,7 @@
 }
 
 .container.video {
-  background: var(--white);
+  // background: var(--white);
   height: 1686px;
   .best-pr {
     color: var(--black-two);
@@ -357,6 +460,253 @@
     }
   }
   .main-banner-vd {
+    width: 1251px;
+    margin: auto;
     text-align: center;
+    z-index: 1;
+    img {
+      width: 90%;
+    }
+  }
+}
+
+.btn-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 60px;
+  border: none;
+  background: none;
+  color: var(--tomato);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container.intro {
+    background-size: 100% 100%;
+    .content-intro {
+      width: 100%;
+      margin: auto;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 30px;
+      }
+    }
+  }
+  .container.best {
+    .best-pr {
+      width: 100%;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 30px;
+      }
+    }
+    .row {
+      .best-pr-item {
+        .img {
+          width: 100%;
+        }
+        .card-info {
+          top: 30px;
+        }
+      }
+    }
+  }
+
+  .container.product {
+    .row {
+      .product-card {
+        margin-bottom: 20px;
+        &:nth-last-of-type(-n + 15) {
+          display: none;
+        }
+      }
+    }
+  }
+  .container.story {
+    height: 1300px;
+    .best-pr {
+      width: 100%;
+      padding-top: 100px;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .object-gr {
+      display: none;
+    }
+    .row {
+      flex-direction: column;
+      .outner {
+        .line-story {
+          width: 100vh;
+        }
+        .main-story {
+          display: block;
+          width: 100vh;
+          img {
+            width: 100%;
+          }
+          .group-content {
+            width: 100%;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            p {
+              margin-left: 40px;
+              margin-right: 40px;
+            }
+            .btn-seemore {
+              width: 150px;
+              margin: auto;
+              margin-bottom: 50px;
+              button {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container.issue {
+    height: 2000px;
+    .best-pr {
+      width: 100%;
+      padding-top: 100px;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 1rem;
+      }
+    }
+    .group-news {
+      .row {
+        .wh-issue {
+          img {
+            transform: rotate(90deg);
+          }
+        }
+        .card {
+          width: 50%;
+          &:first-child {
+            width: 100%;
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container.intro {
+    background-size: 100% 100%;
+    .content-intro {
+      width: 100%;
+      margin: auto;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 20px;
+      }
+    }
+  }
+  .container.best {
+    .best-pr {
+      width: 100%;
+      padding-top: 100px;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 30px;
+      }
+    }
+    .row {
+      .best-pr-item {
+        .img {
+          width: 100%;
+        }
+        .card-info {
+          width: 70%;
+          top: -135px;
+          p {
+            font-size: 0.8rem;
+          }
+          button {
+            font-size: 1rem;
+            width: 3rem;
+            height: 3rem;
+          }
+        }
+      }
+    }
+  }
+  .container.product {
+    .row {
+      .product-card {
+        margin-bottom: 20px;
+        &:nth-last-of-type(-n + 21) {
+          display: none;
+        }
+      }
+    }
+  }
+  .container.story {
+    height: 1150px;
+    .best-pr {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .object-gr {
+      display: none;
+    }
+    .row {
+      .outner {
+        width: 100%;
+        .line-story {
+          width: 100%;
+        }
+        .main-story {
+          width: 100%;
+          .group-content {
+            h1 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+            .btn-seemore {
+              width: 130px;
+              button {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -59,10 +59,6 @@
   background: #555;
 }
 
-$mobile-width: 480px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
-
 .text {
   font-family: "Montserrat", sans-serif;
 }
@@ -74,12 +70,24 @@ $desktop-width: 1024px;
 html {
   font-size: 16px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
   margin: auto;
   background: var(--white);
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .container {
