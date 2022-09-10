@@ -38,7 +38,7 @@ footer {
         }
       }
     }
-    .ft-lisence {
+    .ft-license {
       margin-top: 85px;
       width: 839px;
       p {
@@ -51,6 +51,85 @@ footer {
       margin-top: 85px;
       span {
         margin-left: 23px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    .container {
+      .row {
+        flex-direction: column;
+        .gr-left {
+          h1 {
+            font-size: 2rem;
+          }
+          ul {
+            li {
+              font-size: 1rem;
+            }
+          }
+        }
+        .gr-right {
+          margin-top: 50px;
+          .row {
+            flex-direction: row;
+            .ft-item {
+              width: 50%;
+              margin-left: 0;
+              margin-top: 30px;
+              h1 {
+                font-size: 1.5rem;
+              }
+              ul {
+                li {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .row.license {
+        flex-direction: column-reverse;
+        .ft-license {
+          width: 100%;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+        .ft-social {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    text-align: center;
+    .container {
+      .row {
+        flex-direction: column;
+        .gr-left {
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+        .gr-right {
+          .row {
+            h1 {
+              font-size: 1.2rem !important;
+            }
+            ul {
+              li {
+                font-size: 0.8rem !important;
+              }
+            }
+          }
+        }
       }
     }
   }

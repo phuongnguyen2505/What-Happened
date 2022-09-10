@@ -4,6 +4,7 @@ import "./styles.scss";
 import bg from "../asset/picture/main-banner.png";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+
 Body.propTypes = {};
 
 function Body(props) {
@@ -28,6 +29,11 @@ function Body(props) {
 
   return (
     <section>
+      {showButton && (
+        <button onClick={scrollToTop} className="btn-to-top">
+          <BsFillArrowUpCircleFill />
+        </button>
+      )}
       <div className="main-banner">
         <img src={`${bg}`} alt="" />
       </div>
@@ -758,15 +764,6 @@ function Body(props) {
           <img src={require("../asset/picture/video.png")} alt="" />
         </div>
       </div>
-
-      {showButton && (
-        <button onClick={scrollToTop} className="btn-to-top">
-          <BsFillArrowUpCircleFill />
-        </button>
-      )}
-      <button onClick={scrollToTop} className="btn-to-top">
-        <BsFillArrowUpCircleFill />
-      </button>
     </section>
   );
 }
