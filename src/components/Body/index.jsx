@@ -67,10 +67,10 @@ function Body(props) {
                 <p>01</p>
               </div>
               <img src={require("../asset/picture/best-image-01.png")} alt="" />
-            </div>
-            <div className="card-info">
-              <p>How to create mobile-optimized</p>
-              <button>GO</button>
+              <div className="card-info">
+                <p>How to create mobile-optimized</p>
+                <button>GO</button>
+              </div>
             </div>
           </div>
           <div className="best-pr-item text">
@@ -83,10 +83,10 @@ function Body(props) {
                 <p>02</p>
               </div>
               <img src={require("../asset/picture/best-image-02.png")} alt="" />
-            </div>
-            <div className="card-info">
-              <p>How to create mobile-optimized</p>
-              <button>GO</button>
+              <div className="card-info">
+                <p>How to create mobile-optimized</p>
+                <button>GO</button>
+              </div>
             </div>
           </div>
           <div className="best-pr-item text">
@@ -99,10 +99,10 @@ function Body(props) {
                 <p>03</p>
               </div>
               <img src={require("../asset/picture/best-image-03.png")} alt="" />
-            </div>
-            <div className="card-info">
-              <p>How to create mobile-optimized</p>
-              <button>GO</button>
+              <div className="card-info">
+                <p>How to create mobile-optimized</p>
+                <button>GO</button>
+              </div>
             </div>
           </div>
         </div>
